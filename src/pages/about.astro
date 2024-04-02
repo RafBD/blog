@@ -1,0 +1,38 @@
+---
+import Layout from "../layouts/Layout.astro"
+import SocialButton from "../components/SocialButton.astro"
+---
+<Layout title="BlogName | Acerca de" description="Pagina que te da informacion sobre el autor del blog">
+    <main class="flex items-center justify-center flex-col gap-6 lg:p-24">
+        <h1 class="lg:text-4xl font-bold text-center"> Acerca del Autor</h1>
+        <div>
+            <h2 class="lg:text-4xl font-bold text-center mb-6">¿Quién Soy?</h2>
+            <p>
+                ¡Hola a todos! Soy <strong>Luis Benítez</strong>, y estoy encantado de ser parte de este espacio donde podemos explorar juntos el fascinante mundo de la comunicación, la política y la economía internacional. Mi viaje académico comenzó en la Facultad de Ciencias Políticas y Sociales de la Universidad Nacional Autónoma de México (UNAM), donde stron me especialicé en Comunicación y Campañas Políticas, y obtuve mi licenciatura en Ciencias de la Comunicación con un enfoque en Periodismo.
+            </p>
+            <p>
+                Además, he profundizado mis conocimientos en economía internacional, lo que me permite tener una visión integral de los eventos políticos y económicos globales. <strong>Actualmente, formo parte del equipo de El Economista</strong>,  donde tengo la oportunidad de aplicar mis conocimientos y pasión en el análisis político y económico.
+            </p>
+            <p>
+                En este blog, estaré compartiendo reflexiones, análisis y consejos sobre una amplia gama de temas relevantes en el ámbito político, económico y de comunicación. ¡Espero que disfruten del viaje tanto como yo!
+            </p>
+        </div>
+        <!-- Redes Sociales -->
+        <div class="flex flex-col">
+            <h2 class="lg:text-4xl font-bold text-center mb-6">Sígueme en mis redes sociales</h2>
+            <div class="flex items-center justify-center gap-4">
+                <SocialButton>
+                    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-facebook"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" /></svg>
+                </SocialButton>
+                <SocialButton>
+                    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-instagram"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" /><path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M16.5 7.5l0 .01" /></svg>
+                </SocialButton>
+                <SocialButton>
+                    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-x"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 4l11.733 16h4.267l-11.733 -16z" /><path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772" /></svg>
+                </SocialButton>
+            </div>
+            
+        </div>
+    </main>  
+    
+</Layout>

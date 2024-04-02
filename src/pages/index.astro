@@ -1,16 +1,26 @@
 ---
-
+import Layout from '../layouts/Layout.astro'
+import Header from '../components/Header.astro'
+import SearchBar from '../components/SearchBar.astro'
+import Card from '../components/Card.astro'
+import SectionContainer from '../components/SectionContainer.astro'
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout title="BlogName | Inicio" description="Este es el blog de la tata mensa y bien gorda">
+    <main class="lg:px-6 md:mx-0 lg:w-[1200px] flex flex-col lg:mx-auto">
+        <Header />
+        <SearchBar />
+        <SectionContainer class="">
+            <Card title='La economía mundial se enfrenta a un nuevo desafío: Impacto de la crisis energética en Europa' description='La creciente crisis energética en Europa ha generado preocupaciones sobre su impacto en la economía global. Descubre cómo esta situación está afectando a los mercados financieros y a la estabilidad económica mundial.' image='/public/img/img_1.jpg' alt='Foto de Personas sentadas'/>
+        </SectionContainer>
+        <SectionContainer class="">
+            <Card title='Comercio internacional y globalización: ¿Oportunidades o amenazas para el desarrollo?' description='La globalización ha sido un factor determinante en la economía mundial durante las últimas décadas. En este blog discutiremos los beneficios y desafíos del comercio internacional y la globalización, y analizaremos su impacto en el desarrollo económico de los países.' image='/public/img/img_2.jpg' alt='Foto de Personas sentadas'/>
+        </SectionContainer>
+        <SectionContainer class="">
+            <Card title='Desigualdad económica global: Un reto para la justicia social y la estabilidad' description='La desigualdad económica es uno de los principales problemas que enfrenta el mundo hoy en día. En este blog analizaremos las causas y consecuencias de la desigualdad económica global, y exploraremos posibles soluciones para este problema.' image='/public/img/img_3.jpeg' alt='Foto de Personas sentadas'/>
+        </SectionContainer>
+        <SectionContainer class="">
+            <Card title='El panorama económico global: Tendencias y desafíos para 2024' description='En este blog analizaremos las principales tendencias que están configurando la economía mundial en 2024, como la recuperación económica post-pandemia, la guerra en Ucrania, la crisis energética y las nuevas tecnologías. También abordaremos los desafíos que enfrenta la economía global, como la inflación, el cambio climático y la desigualdad.' image='/public/img/img_1.jpg' alt='Foto de Personas sentadas'/>
+        </SectionContainer>
+    </main>
+</Layout>

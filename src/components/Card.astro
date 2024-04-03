@@ -9,13 +9,13 @@ interface Props {
 const {title, description, image, alt} = Astro.props;
 ---
 
-<a href="#" class="flex flex-col lg:flex-row items-center justify-center lg:p-6 lg:gap-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
-  <div class="flex flex-col justify-between p-4 lg:w-[40rem] ">
-      <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{title}</h5>
-      <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">{description}.</p>
+<a href="#" class="flex flex-col md:flex-row items-center justify-center md:p-6 lg:gap-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+  <div class="flex flex-col justify-between p-4 md:w-[40rem] ">
+      <h3 class="mb-2 text-[18px] lg:text-[18.2px] font-bold tracking-tight text-gray-900 dark:text-white">{title}</h3>
+      <p class="mb-3 text-[14px]  lg:text-[16px] text-gray-700 dark:text-gray-400">{description}.</p>
   </div>
-  <div class="w-[400px]">
-    <img class="w-full object-fill h-64 lg:h-56" src={image} alt={alt}>
+  <div class="w-full md:w-[400px]">
+    <img class="w-full object-fill h-auto md:h-56" src={image} alt={alt}>
   </div>
 </a>
 
